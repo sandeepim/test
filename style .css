@@ -8,3 +8,21 @@
     list-style-type: none;
     float:left;
 }
+.circular{
+    display: block;
+    margin-top: 50px; 
+    margin-left: 550px;
+    border-radius: 25px;
+}
+.sandu{
+    text-align: center;
+    margin-top: 10px;
+}
+div .sandu h2{
+    line-height: 1cm;
+    font-size: 50px;
+}
+div .sandu h3{
+    line-height: 1cm;
+    font-size: 25px;
+}
