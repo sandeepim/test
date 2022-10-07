@@ -1,28 +1,47 @@
-.hero ul li a{
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background: whitesmoke;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+label.logo{
+    color:  cyan;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+span.prm{
     color: black;
-    text-decoration: none;
-    display: block;
-    text-align: center;
 }
-.hero ul li{
+#sidebarmenu{
+    height: 13%;
+    position: fixed;
+    left: 1250px;
+    top: 0;
+    width: 200px;
+    text-align: center;
+    margin-top: 80px;
+    background: whitesmoke;
+}
+.menu ul{
     list-style-type: none;
-    float:left;
+    padding: 0%;
+    margin: 0;
 }
-.circular{
+.menu ul li a{
+    line-height: 30px;
+    color:black;
+    text-decoration: none;
+    padding: 20px;
     display: block;
-    margin-top: 50px; 
-    margin-left: 550px;
-    border-radius: 25px;
+    font-size: 25px; 
 }
-.sandu{
-    text-align: center;
-    margin-top: 10px;
-}
-div .sandu h2{
-    line-height: 1cm;
-    font-size: 50px;
-}
-div .sandu h3{
-    line-height: 1cm;
-    font-size: 25px;
-}
+
+.menu ul li a:hover {
+    background-color: #555;
+    color: white;
+  }
