@@ -1,47 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    margin-left: 0%;
 }
+
 nav{
     background: whitesmoke;
     height: 80px;
-    width: 100%;
+    width:100%;
     position: fixed;
 }
 label.logo{
-    color:  cyan;
-    font-size: 30px;
+    color: black;
+    font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
 }
-span.prm{
+.logo span{
+    color: cyan;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+nav ul li a{
     color: black;
-}
-#sidebarmenu{
-    height: 13%;
-    position: fixed;
-    left: 1250px;
-    top: 0;
-    width: 200px;
-    text-align: center;
-    margin-top: 80px;
-    background: whitesmoke;
-}
-.menu ul{
-    list-style-type: none;
-    padding: 0%;
-    margin: 0;
-}
-.menu ul li a{
-    line-height: 30px;
-    color:black;
+    font-size: 20px;
     text-decoration: none;
-    padding: 20px;
-    display: block;
-    font-size: 25px; 
 }
 
-.menu ul li a:hover {
-    background-color: #555;
-    color: white;
+.sandeep{
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+}
+.sandeep img{
+    height: 150px;
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 10px;
+    
+}
+#mb{
+    color:cyan;
+}
+
+#name{
+    font-size: 30px;
+    line-height: 0.75;
+}
+#profile{
+    font-size: 20px;
+    color: dimgray;
+    line-height: 0.75;
+}
+#course{
+    font-size: 15px;
+    color: rgb(60, 141, 141);
+    line-height: 0.75;
+}
+
+.icons{
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(0,0,0);
+}
+.projects{
+    color: black;
+    font-style: bold;
+    text-align:center;
+}
+.projects span{
+    color: cyan;
+
+}
+
+.section{
+    display: flex;
+    padding: 0;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 0.25cm;
+    margin-left: 125px;
+}
+.section img{
+    height: 450px;
+}
+.section h3{
+    text-align: left;
+}
+.section p{
+    line-height: 2;
+    text-align: left;
+}
+.buttons {
+    border: none;
+    color: black;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
   }
+
+
+.sectionmb {
+    display: flex;
+    padding: 0;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 0.25cm; 
+    margin-left: 125px;
+    color:black;
+}
+.sectionmb img{
+    height: 400px;
+    width: 550px;
+}
+.sectionmb h3{
+    text-align: left;
+}
+.sectionmb p{
+    line-height: 2;
+    text-align: left;
+    margin-left: 0%;
+}
+
