@@ -139,3 +139,24 @@ nav ul li a{
     margin-left: 0%;
 }
 
+/*
+.container{
+    display: flex;
+    overflow-x: scroll;
+    padding: 24px;
+    width: 85%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    gap: 12px;
+}
+.container .section{
+    flex: 0 0  100%;
+    padding: 24px;
+    scroll-snap-align: start;
+}
+.container .sectionmb{
+    flex: 0 0  100%;
+    padding: 24px;
+    scroll-snap-align: start;
+}
+/*
