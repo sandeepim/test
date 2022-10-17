@@ -1,161 +1,236 @@
+
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin: 0%;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    width:100%;
-    margin-left: 0%;
-}
-
-nav{
-    background: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+  } 
+  nav{
+    display: flex;
     height: 80px;
-    width:100%;
+    width: 100%;
+    background: whitesmoke;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
     position: fixed;
-}
-label.logo{
+  }
+  nav .logo{
     color: black;
     font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-.logo span{
-    color: cyan;
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin:0 5px;
-}
-nav ul li a{
+    font-weight: 600;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
     color: black;
-    font-size: 20px;
     text-decoration: none;
-}
-
-.sandeep{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
     color: black;
-    margin-top: 50px;
+    background: whitesmoke;
+  }
+  nav .menu-btn i{
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  @media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+  }
+  @media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: whitesmoke;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: black;
+    }
+  }
+  
+.contents{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-}
-.sandeep img{
-    height: 150px;
-    border-radius: 50%;
-    width: 150px;
-    margin-bottom: 10px;
-    
-}
-#mb{
-    color:cyan;
-}
+    z-index: -1;
+    width: 100%;
+    padding: 0 30px;
+    color: #1b1b1b;
+    margin-top: 55%;
+  }
 
-#name{
+  .sandeep div{
+    color: black;
+    text-align: center;
+  }
+  .sandeep img{
+    height: 300px;
+    border-radius: 75%;
+    width: 250px;
+
+  }
+  #mb{
+    color:cyan;
+  }
+  #name{
     font-size: 30px;
-    line-height: 0.75;
-}
-#profile{
+    line-height: 1.5;
+
+  }
+  #profile{
     font-size: 20px;
     color: dimgray;
-    line-height: 0.75;
-}
-#course{
+    line-height: 1.5;
+  }
+  #course{
     font-size: 15px;
-    color: rgb(60, 141, 141);
-    line-height: 0.75;
-}
+    color: rgb(12, 61, 61);
+    line-height: 1.5;
+  }
 
-.icons{
-    margin-top: 20px;
-    font-size: 30px;
-    color: rgb(0,0,0);
-}
-.projects{
+  .projects{
     color: black;
     font-style: bold;
-    text-align:center;
-}
-.projects span{
+  }
+  .projects span{
     color: cyan;
 
-}
-
-.section{
+  }
+  .section{
     display: flex;
-    padding: 0;
+    padding: 2%;
     width: 80%;
     border: 1px solid black;
     border-radius: 0.25cm;
-    margin-left: 125px;
-}
-.section img{
-    height: 450px;
-}
-.section h3{
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: left;
-}
-.section p{
+  }
+  .section p{
     line-height: 2;
-    text-align: left;
+  }
+  .section img{
+  height: 300px;
 }
-.buttons {
-    border: none;
+
+  .section button {
+    border: thin black;
     color: black;
-    padding: 20px 40px;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    transition-duration: 0.4s;
+    background-color: whitesmoke;
   }
 
+  @media (max-width:1000px) and (min-width: 600px){
+    .contents{
+      margin-top: 100%;
+    }
+    .section img{
+        height: 200px;
+    }
+  }
 
-.sectionmb {
-    display: flex;
-    padding: 0;
-    width: 80%;
-    border: 1px solid black;
-    border-radius: 0.25cm; 
-    margin-left: 125px;
-    color:black;
-}
-.sectionmb img{
-    height: 400px;
-    width: 550px;
-}
-.sectionmb h3{
-    text-align: left;
-}
-.sectionmb p{
-    line-height: 2;
-    text-align: left;
-    margin-left: 0%;
-}
+  @media (max-width: 1300px) and (min-width: 1000px){
+    .contents{
+      margin-top: 65%;
+    }
+    .section img{
+        height: 200px;
+    }
+  }
 
+  @media (max-width:500px) and (min-width: 300px){
+    .contents{
+      margin-top: 235%;
+    }
+    .section{
+      display: grid;
+    }
+    .section img{
+      height: 140px;
+    }
+  }
 
-.container{
-    display: flex;
-    overflow-x: scroll;
-    padding: 24px;
-    width: 85%;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 24px;
-    gap: 12px;
-}
-.container .section{
-    flex: 0 0  100%;
-    padding: 24px;
-    scroll-snap-align: start;
-}
-.container .sectionmb{
-    flex: 0 0  100%;
-    padding: 24px;
-    scroll-snap-align: start;
-}
+  @media (max-width:550px) and (min-width: 500px){
+    .contents{
+      margin-top: 150%;
+    }
+    .section{
+      display: grid;
+    }
+    .section img{
+      height: 140px;
+    }
+  }
+ 
+  @media (max-width:300px) and (min-width: 250px){
+    .contents{
+      margin-top: 325%;
+    }
+    .section{
+      display: grid;
+      width: 110%;
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+    .section img{
+      height: 140px;
+    }
+  }
