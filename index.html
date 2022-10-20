@@ -8,24 +8,24 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <body>
-      <div>
-         <nav>
-            <div class="logo">
-               Portfolio
-            </div>
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-            <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-               <li><a class="active" href="#">About</a></li>
-               <li><a class="active" href="#">Projects</a></li>
-            </ul>
-         </nav>
-      </div>
+      <nav>
+         <div class="logo">
+               P<span>ortfolio</span>
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a class="active" href="#">About</a></li>
+            <li><a class="active" href="#">Projects</a></li>
+         </ul>
+      </nav>
+      
       <div class="contents">
          <div class="sandeep">
             <h1><span id="mb">A</span>bout</h1>
+            <br>
             <img src="sandeep.jpg" alt="Image to align"/>
             <br>
             <br>
@@ -33,6 +33,11 @@
             <p id="profile">Web Application Developer</p>
             <p id="course">HTML/CSS/JavaScript/React/Redux/ Python/DjangoM/Java</p>
             <p> sandeep@techis.io</p>
+            <br>
+            <div>
+               <a class="btn btn-primary " style="color: black; font-size: 50px; padding: 1%; margin-top:2.5%"  href="https://www.linkedin.com/in/sandeep-bandivaddar-ab5287254/" role="button"><i class="fab fa-linkedin"></i></a>
+               <a class="btn btn-primary " style="color: black; font-size: 50px; padding:1%; margin-top: 2.5%;"  href="https://github.com/sandeepim" role="button"><i class="fab fa-github"></i></a>
+            </div>
          </div>
          <br>
          <br>
@@ -40,12 +45,12 @@
             <h2><span>P</span>rojects</h2>
             <br>
             <div class="section">
-               <div>
+               <div class="left-section">
                   <img src="project-twitter.png" alt="Image to align"/>
                </div>
                <br>
-               <div>
-                   <p>
+               <div class="right-section">
+                  <p>
                      <h3>Twitter Clone</h3>
                      <br>
                      A Twitter like app which allows you  to post, edit, delete and update your posts.
@@ -54,36 +59,36 @@
                      <br>Email-sample@gmail.com
                      <br>Password:Pass
                      <br>
-                     <br>
-                     <button>Github link</button>
-                     <button>Website link</button>
-                   </p>
+                  </p>
+                     <div class="btn-group">
+                        <button href="#" target="_blank" class="button">Website Link</button>
+                        <button class="button"><a href="https://github.com/sandeepim" target="_blank" style="text-decoration: none; color: white;">Github code</a></button>
+                     </div>
                </div>
             </div>
-            <br>
             <div class="section">
-               <div>
+               <div class="left-section">
                   <img src="netflix.png" alt="Image to align"/>
                </div>
                <br>
-               <div>
+               <div class="right-section">
                    <p>
                      <h3>Netflix Clone</h3>
                      <br>
                      A Twitter like app which allows you  to post, edit, delete and update your posts.
                      <br>
                      <br>Test Login Account
-                     <br>Email-sample@gmail.com
+                     <br>Email-sample@gmail.com 
                      <br>Password:Pass
                      <br>
-                     <br>
-                     <button>Github link</button>
-                     <button>Website link</button>
                    </p>
+                   <div class="btn-group">
+                     <button class="button">Website Link</button>
+                     <button class="button"><a href="https://github.com/sandeepim" target="_blank" style="text-decoration: none; color: white;">Github code </a></button>
+                   </div>
                </div>
             </div>
          </div>
       </div>
-
    </body>
 </html>
